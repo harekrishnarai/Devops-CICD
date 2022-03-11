@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 import os
-app = Flask()
+app = Flask("Sample App")
 @app.route("/")
 def helloworld():
   os.environ["DYNAMIC_CONTENT"]="This is a sample which we will change later"
